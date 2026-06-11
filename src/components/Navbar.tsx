@@ -1,12 +1,16 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
-const links = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Early Ventures', href: '#ventures' },
-  { label: 'Contact', href: '#contact' },
+// Section links point at the home page (base URL) + anchor, so they work from any route —
+// e.g. from /newsletter they navigate home and scroll to the section.
+const base = import.meta.env.BASE_URL
+const sectionLinks = [
+  { label: 'Home', href: base },
+  { label: 'About', href: `${base}#about` },
+  { label: 'Experience', href: `${base}#experience` },
+  { label: 'Early Ventures', href: `${base}#ventures` },
+  { label: 'Contact', href: `${base}#contact` },
 ]
 
 export default function Navbar() {
@@ -26,22 +30,27 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#home" className="text-lg font-semibold text-primary">
+        <a href={base} className="text-lg font-semibold text-primary">
           Meera Kurup
         </a>
 
         {/* Desktop */}
-        <ul className="hidden md:flex gap-8 text-sm font-medium text-gray-600">
-          {links.map((l) => (
+        <ul className="hidden md:flex gap-8 text-sm font-medium text-gray-600 items-center">
+          {sectionLinks.map((l) => (
             <li key={l.label}>
-              <a
-                href={l.href}
-                className="hover:text-primary transition-colors duration-200"
-              >
+              <a href={l.href} className="hover:text-primary transition-colors duration-200">
                 {l.label}
               </a>
             </li>
           ))}
+          <li>
+            <Link
+              to="/newsletter"
+              className="text-primary hover:text-primary-dark transition-colors duration-200"
+            >
+              Newsletter
+            </Link>
+          </li>
         </ul>
 
         {/* Mobile toggle */}
@@ -58,7 +67,7 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-white/95 backdrop-blur-sm border-t border-gray-100 px-6 pb-4">
           <ul className="flex flex-col gap-4 pt-4 text-sm font-medium text-gray-700">
-            {links.map((l) => (
+            {sectionLinks.map((l) => (
               <li key={l.label}>
                 <a
                   href={l.href}
@@ -69,6 +78,15 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
+            <li>
+              <Link
+                to="/newsletter"
+                onClick={() => setOpen(false)}
+                className="text-primary font-semibold hover:text-primary-dark transition-colors"
+              >
+                Newsletter
+              </Link>
+            </li>
           </ul>
         </div>
       )}

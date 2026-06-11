@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Meera Kurup</title>
+    <!--
+      GitHub Pages SPA redirect (single-page-apps-for-github-pages technique).
+      GH Pages has no server-side route fallback, so a refresh on /newsletter/<slug>
+      hits this 404 page. We encode the path into a query string and bounce to the app
+      root; index.html decodes it back so React Router can handle the route.
+      pathSegmentsToKeep = 1 keeps the /meera-kurup-website/ project base path.
+    -->
+    <script type="text/javascript">
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
