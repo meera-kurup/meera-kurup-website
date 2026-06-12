@@ -1,21 +1,18 @@
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Experience from './components/Experience'
-import EarlyVentures from './components/EarlyVentures'
-import Press from './components/Press'
-import Contact from './components/Contact'
+import Home from './pages/Home'
+import Newsletter from './components/Newsletter'
+import NewsletterIssue from './pages/NewsletterIssue'
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <EarlyVentures />
-      <Press />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/newsletter" element={<Newsletter />} />
+        <Route path="/newsletter/:slug" element={<NewsletterIssue />} />
+      </Routes>
     </>
   )
 }
