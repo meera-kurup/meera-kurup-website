@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion'
 import { Mail, Twitter, Linkedin } from 'lucide-react'
+import { asset } from '../utils/asset'
 
 const photos = [
-  { src: '/images/photos/british_columbia.jpg', alt: 'British Columbia' },
-  { src: '/images/photos/brown.jpg', alt: 'Brown University' },
-  { src: '/images/photos/rainier.JPG', alt: 'Mount Rainier' },
-  { src: '/images/photos/maine.jpg', alt: 'Maine' },
-  { src: '/images/photos/boston.jpg', alt: 'Boston' },
+  { src: asset('images/photos/british_columbia.jpg'), alt: 'British Columbia' },
+  { src: asset('images/photos/brown.jpg'), alt: 'Brown University' },
+  { src: asset('images/photos/rainier.JPG'), alt: 'Mount Rainier' },
+  { src: asset('images/photos/maine.jpg'), alt: 'Maine' },
+  { src: asset('images/photos/boston.jpg'), alt: 'Boston' },
 ]
 
 const socials = [

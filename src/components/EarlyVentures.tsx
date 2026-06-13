@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { ExternalLink, Github, Youtube } from 'lucide-react'
+import { asset } from '../utils/asset'
 
 type Link = { label: string; href: string; icon?: typeof ExternalLink }
 
@@ -12,7 +13,7 @@ const ventures: { tag: string; title: string; description: string; links: Link[]
     links: [
       { label: 'Read Press', href: 'https://extension.unh.edu/blog/2018/03/coded-success', icon: ExternalLink },
     ],
-    image: '/images/projects/codeitgirls.png',
+    image: asset('images/projects/codeitgirls.png'),
   },
   {
     tag: 'Co-founder & CTO',
@@ -26,7 +27,7 @@ const ventures: { tag: string; title: string; description: string; links: Link[]
         icon: ExternalLink,
       },
     ],
-    image: '/images/projects/empoweru.png',
+    image: asset('images/projects/empoweru.png'),
   },
   {
     tag: '2018 Congressional App Challenge Winner',
@@ -37,7 +38,7 @@ const ventures: { tag: string; title: string; description: string; links: Link[]
       { label: 'GitHub', href: 'https://github.com/meera-kurup/ALZPoetry', icon: Github },
       { label: 'Watch Demo', href: 'https://www.youtube.com/watch?v=myzN1LHgtlQ', icon: Youtube },
     ],
-    image: '/images/projects/alzspoetry.png',
+    image: asset('images/projects/alzspoetry.png'),
   },
 ]
 

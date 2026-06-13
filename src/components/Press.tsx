@@ -1,24 +1,25 @@
 import { motion } from 'framer-motion'
+import { asset } from '../utils/asset'
 
 const press = [
   {
     href: 'https://www.browndailyherald.com/article/2021/11/student-founded-empoweru-looks-to-provide-resources-to-prospective-first-generation-college-students',
-    img: '/images/clients/bdh.png',
+    img: asset('images/clients/bdh.png'),
     alt: 'Brown Daily Herald',
   },
   {
     href: 'https://www.nashuatelegraph.com/news/local-news/2018/01/23/bishop-guertin-student-to-be-honored-in-d-c/',
-    img: '/images/clients/telegraph.png',
+    img: asset('images/clients/telegraph.png'),
     alt: 'Nashua Telegraph',
   },
   {
     href: 'https://www.nhbr.com/techwomen-to-honor-three-women-at-april-4th-luncheon/',
-    img: '/images/clients/nh-br.jpeg',
+    img: asset('images/clients/nh-br.jpeg'),
     alt: 'NH Business Review',
   },
   {
     href: 'https://extension.unh.edu/blog/2018/03/coded-success',
-    img: '/images/clients/unh.png',
+    img: asset('images/clients/unh.png'),
     alt: 'UNH Extension',
   },
 ]

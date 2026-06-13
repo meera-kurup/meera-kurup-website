@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { CheckCircle2 } from 'lucide-react'
+import { asset } from '../utils/asset'
 
 const bullets = [
   'Own enterprise networking and secure connectivity for Microsoft Foundry and AzureML, shipping features from ideation to GA across IP allowlisting, virtual network integration, private connectivity, and agent tooling.',
@@ -34,7 +35,7 @@ export default function Experience() {
         >
           <div className="flex flex-col sm:flex-row sm:items-start gap-6 mb-8">
             <img
-              src="/images/experience/microsoft.png"
+              src={asset('images/experience/microsoft.png')}
               alt="Microsoft"
               className="w-16 h-16 object-contain rounded-xl bg-gray-50 p-2 border border-gray-100 shrink-0"
             />

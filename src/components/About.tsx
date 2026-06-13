@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { asset } from '../utils/asset'
 
 export default function About() {
   return (
@@ -12,7 +13,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <img
-              src="/images/Its_Meera.png"
+              src={asset('images/Its_Meera.png')}
               alt="Meera Kurup"
               className="rounded-2xl w-full max-w-md mx-auto shadow-lg"
             />

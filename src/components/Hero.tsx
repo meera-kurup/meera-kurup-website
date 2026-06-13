@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { FileText, Linkedin } from 'lucide-react'
+import { asset } from '../utils/asset'
 
 export default function Hero() {
   return (
@@ -15,7 +16,7 @@ export default function Hero() {
         >
           <div className="flex items-center gap-4 mb-6">
             <img
-              src="/images/Meera_Profile.jpg"
+              src={asset('images/Meera_Profile.jpg')}
               alt="Meera Kurup"
               className="w-16 h-16 rounded-full object-cover ring-2 ring-primary/30"
             />
@@ -64,7 +65,7 @@ export default function Hero() {
           className="flex justify-center"
         >
           <img
-            src="/images/Meera_Hiking.JPG"
+            src={asset('images/Meera_Hiking.JPG')}
             alt="Meera hiking"
             className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-full shadow-xl ring-4 ring-white"
           />
