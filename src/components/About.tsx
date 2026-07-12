@@ -38,9 +38,8 @@ export default function About() {
               shipping features that help regulated enterprises adopt AI at scale.
             </p>
             <p className="text-white/80 text-lg leading-relaxed mb-5">
-              Before Microsoft, I founded and led CodeIT Girls, EmpowerU, and ALZPoetry —
-              community and ed-tech ventures focused on expanding access to technology and
-              education — experience that shaped how I approach product today: start from
+              Before Microsoft, I founded and led a handful of community and ed-tech
+              ventures — experience that shaped how I approach product today: start from
               the user, ship fast, and measure real impact.
             </p>
             <p className="text-white/70 text-base leading-relaxed">
