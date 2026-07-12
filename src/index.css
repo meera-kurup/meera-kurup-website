@@ -7,12 +7,15 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply font-sans text-gray-800 bg-white;
+    @apply font-sans text-ink bg-white;
+  }
+  h1, h2, h3 {
+    @apply tracking-tight;
   }
 }
 
 @layer utilities {
   .section-padding {
-    @apply py-20 px-4;
+    @apply py-16 px-4 md:py-20;
   }
 }

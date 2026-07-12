@@ -44,7 +44,7 @@ const ventures: { tag: string; title: string; description: string; links: Link[]
 
 export default function EarlyVentures() {
   return (
-    <section id="ventures" className="section-padding bg-accent-light">
+    <section id="ventures" className="section-padding bg-white">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -56,7 +56,7 @@ export default function EarlyVentures() {
           <p className="text-accent text-sm font-semibold tracking-widest uppercase mb-2">
             Where it started
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Early Ventures</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-ink">Early Ventures</h2>
           <p className="text-gray-500 mt-3 max-w-xl mx-auto">
             Community and social impact work I founded and led before Microsoft.
           </p>
@@ -70,9 +70,9 @@ export default function EarlyVentures() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-white rounded-2xl overflow-hidden border border-accent/20 hover:shadow-md transition-shadow duration-300"
+              className="bg-white rounded-lg overflow-hidden border border-gray-100 hover:shadow-md transition-shadow duration-300"
             >
-              <div className="h-44 overflow-hidden bg-accent-light">
+              <div className="h-44 overflow-hidden bg-gray-50">
                 <img
                   src={venture.image}
                   alt={venture.title}
@@ -80,10 +80,10 @@ export default function EarlyVentures() {
                 />
               </div>
               <div className="p-6">
-                <span className="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-accent/10 text-accent mb-3">
+                <span className="inline-block text-xs font-semibold px-3 py-1 rounded-md bg-accent/10 text-accent mb-3">
                   {venture.tag}
                 </span>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{venture.title}</h3>
+                <h3 className="text-xl font-bold text-ink mb-3">{venture.title}</h3>
                 <p className="text-gray-600 leading-relaxed mb-5">{venture.description}</p>
                 <div className="flex flex-wrap gap-3">
                   {venture.links.map((link) => {
@@ -94,7 +94,7 @@ export default function EarlyVentures() {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-sm border border-accent/30 text-gray-700 px-4 py-2 rounded-full hover:border-accent hover:text-accent transition-colors duration-200"
+                        className="inline-flex items-center gap-2 text-sm border border-gray-200 text-gray-700 px-4 py-2 rounded-md hover:border-accent hover:text-accent transition-colors duration-200"
                       >
                         <Icon size={13} />
                         {link.label}
