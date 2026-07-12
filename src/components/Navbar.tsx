@@ -1,15 +1,12 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
-// Section links point at the home page (base URL) + anchor, so they work from any route —
-// e.g. from /newsletter they navigate home and scroll to the section.
 const base = import.meta.env.BASE_URL
 const sectionLinks = [
   { label: 'Home', href: base },
   { label: 'About', href: `${base}#about` },
   { label: 'Experience', href: `${base}#experience` },
-  { label: 'Early Ventures', href: `${base}#ventures` },
+  { label: 'Speaking', href: `${base}#speaking` },
   { label: 'Contact', href: `${base}#contact` },
 ]
 
@@ -43,14 +40,6 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-          <li>
-            <Link
-              to="/newsletter"
-              className="text-primary hover:text-primary-dark transition-colors duration-200"
-            >
-              Newsletter
-            </Link>
-          </li>
         </ul>
 
         {/* Mobile toggle */}
@@ -78,15 +67,6 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li>
-              <Link
-                to="/newsletter"
-                onClick={() => setOpen(false)}
-                className="text-primary font-semibold hover:text-primary-dark transition-colors"
-              >
-                Newsletter
-              </Link>
-            </li>
           </ul>
         </div>
       )}

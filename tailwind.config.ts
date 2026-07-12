@@ -5,11 +5,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#629677',
-        'primary-dark': '#4d7a60',
-        'primary-light': '#e8f0eb',
-        accent: '#AF9AB2',
-        'accent-light': '#f0ecf1',
+        ink: '#161b19',
+        primary: '#3d6b52',
+        'primary-dark': '#2c5140',
+        'primary-light': '#eef2ef',
+        accent: '#8a7561',
+        'accent-light': '#f3efe9',
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
