@@ -5,15 +5,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: '#161b19',
-        primary: '#3d6b52',
-        'primary-dark': '#2c5140',
-        'primary-light': '#eef2ef',
-        accent: '#8a7561',
-        'accent-light': '#f3efe9',
+        paper: '#F7F5F0',
+        'paper-raised': '#F1EEE7',
+        ink: '#181817',
+        'ink-soft': '#6D6A64',
+        accent: '#5B4B3D',
+        'accent-dark': '#3E332A',
+        line: '#E3E0D8',
       },
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: ['Archivo', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       },
     },
   },

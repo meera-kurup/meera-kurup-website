@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply font-sans text-ink bg-white;
+    @apply font-sans text-ink bg-paper;
   }
   h1, h2, h3 {
     @apply tracking-tight;

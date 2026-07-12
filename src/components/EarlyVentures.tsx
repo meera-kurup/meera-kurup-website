@@ -44,23 +44,17 @@ const ventures: { tag: string; title: string; description: string; links: Link[]
 
 export default function EarlyVentures() {
   return (
-    <section id="ventures" className="section-padding bg-white">
-      <div className="max-w-6xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-14"
-        >
-          <p className="text-accent text-sm font-semibold tracking-widest uppercase mb-2">
+    <section id="ventures" className="section-padding bg-paper">
+      <div className="max-w-5xl mx-auto pb-10 md:pb-14 border-b border-line">
+        <div className="mb-10">
+          <p className="font-mono text-ink-soft text-xs uppercase tracking-wide mb-2">
             Where it started
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-ink">Early Ventures</h2>
-          <p className="text-gray-500 mt-3 max-w-xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-ink mb-2">Early Ventures</h2>
+          <p className="text-ink-soft max-w-xl">
             Community and social impact work I founded and led before Microsoft.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {ventures.map((venture, i) => (
@@ -70,9 +64,9 @@ export default function EarlyVentures() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-white rounded-lg overflow-hidden border border-gray-100 hover:shadow-md transition-shadow duration-300"
+              className="border border-line"
             >
-              <div className="h-44 overflow-hidden bg-gray-50">
+              <div className="h-44 overflow-hidden bg-paper-raised border-b border-line">
                 <img
                   src={venture.image}
                   alt={venture.title}
@@ -80,12 +74,12 @@ export default function EarlyVentures() {
                 />
               </div>
               <div className="p-6">
-                <span className="inline-block text-xs font-semibold px-3 py-1 rounded-md bg-accent/10 text-accent mb-3">
+                <span className="inline-block font-mono text-xs font-semibold px-2 py-1 border border-line text-accent-dark mb-3">
                   {venture.tag}
                 </span>
                 <h3 className="text-xl font-bold text-ink mb-3">{venture.title}</h3>
-                <p className="text-gray-600 leading-relaxed mb-5">{venture.description}</p>
-                <div className="flex flex-wrap gap-3">
+                <p className="text-ink-soft leading-relaxed mb-5">{venture.description}</p>
+                <div className="flex flex-wrap gap-4">
                   {venture.links.map((link) => {
                     const Icon = link.icon ?? ExternalLink
                     return (
@@ -94,7 +88,7 @@ export default function EarlyVentures() {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-sm border border-gray-200 text-gray-700 px-4 py-2 rounded-md hover:border-accent hover:text-accent transition-colors duration-200"
+                        className="inline-flex items-center gap-2 text-sm text-ink border-b border-ink hover:border-accent hover:text-accent-dark transition-colors duration-200"
                       >
                         <Icon size={13} />
                         {link.label}

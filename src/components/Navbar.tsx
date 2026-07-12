@@ -7,7 +7,6 @@ const sectionLinks = [
   { label: 'About', href: `${base}#about` },
   { label: 'Early Ventures', href: `${base}#ventures` },
   { label: 'Experience', href: `${base}#experience` },
-  { label: 'Speaking', href: `${base}#speaking` },
   { label: 'Contact', href: `${base}#contact` },
 ]
 
@@ -23,20 +22,23 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 bg-paper/95 backdrop-blur-sm border-b transition-colors duration-300 ${
+        scrolled ? 'border-line' : 'border-transparent'
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href={base} className="text-lg font-semibold text-primary">
+      <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href={base} className="text-base font-bold text-ink">
           Meera Kurup
         </a>
 
         {/* Desktop */}
-        <ul className="hidden md:flex gap-8 text-sm font-medium text-gray-600 items-center">
+        <ul className="hidden md:flex gap-7 text-sm text-ink items-center">
           {sectionLinks.map((l) => (
             <li key={l.label}>
-              <a href={l.href} className="hover:text-primary transition-colors duration-200">
+              <a
+                href={l.href}
+                className="border-b border-transparent hover:border-accent pb-0.5 transition-colors duration-200"
+              >
                 {l.label}
               </a>
             </li>
@@ -45,7 +47,7 @@ export default function Navbar() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-gray-600"
+          className="md:hidden text-ink"
           onClick={() => setOpen((o) => !o)}
           aria-label="Toggle menu"
         >
@@ -55,14 +57,14 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-white/95 backdrop-blur-sm border-t border-gray-100 px-6 pb-4">
-          <ul className="flex flex-col gap-4 pt-4 text-sm font-medium text-gray-700">
+        <div className="md:hidden bg-paper border-t border-line px-6 pb-4">
+          <ul className="flex flex-col gap-4 pt-4 text-sm text-ink">
             {sectionLinks.map((l) => (
               <li key={l.label}>
                 <a
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-accent-dark transition-colors"
                 >
                   {l.label}
                 </a>
