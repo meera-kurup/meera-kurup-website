@@ -16,7 +16,7 @@ export default function Hero() {
         >
           <div className="flex items-center gap-4 mb-6">
             <img
-              src={asset('images/Meera_Profile.jpg')}
+              src={asset('images/Meera_Headshot.jpg')}
               alt="Meera Kurup"
               className="w-16 h-16 rounded-lg object-cover ring-1 ring-primary/20"
             />
@@ -65,7 +65,7 @@ export default function Hero() {
           className="flex justify-center"
         >
           <img
-            src={asset('images/Meera_Hiking.JPG')}
+            src={asset('images/Meera_Headshot.jpg')}
             alt="Meera Kurup"
             className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-2xl shadow-xl"
           />

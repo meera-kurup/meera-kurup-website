@@ -13,7 +13,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <img
-              src={asset('images/Its_Meera.png')}
+              src={asset('images/Meera_Headshot.jpg')}
               alt="Meera Kurup"
               className="rounded-lg w-full max-w-md mx-auto shadow-lg"
             />
