@@ -4,44 +4,36 @@ import { asset } from '../utils/asset'
 
 export default function Hero() {
   return (
-    <section
-      id="home"
-      className="min-h-screen flex items-center bg-primary-light pt-16"
-    >
-      <div className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+    <section id="home" className="bg-paper pt-16">
+      <div className="max-w-5xl mx-auto px-6 py-20 grid md:grid-cols-[1.3fr_1fr] gap-12 items-end border-b border-line">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="flex items-center gap-4 mb-6">
-            <img
-              src={asset('images/Meera_Profile.jpg')}
-              alt="Meera Kurup"
-              className="w-16 h-16 rounded-lg object-cover ring-1 ring-primary/20"
-            />
-            <span className="text-primary font-medium text-sm tracking-wide uppercase">
-              Product Manager
-            </span>
-          </div>
+          <p className="font-mono text-accent text-sm uppercase tracking-wide mb-4">
+            Product Manager
+          </p>
 
-          <h1 className="text-5xl md:text-6xl font-bold text-ink leading-tight mb-3">
-            Meera Kurup
+          <h1 className="text-6xl md:text-7xl font-bold text-ink leading-[0.95] tracking-tight mb-5">
+            Meera
+            <br />
+            Kurup
           </h1>
-          <p className="text-xl text-accent font-medium mb-2">
+          <p className="text-xl text-ink font-semibold mb-3">
             Product Manager II · Microsoft CoreAI
           </p>
-          <p className="text-ink/60 text-base mb-8 max-w-md">
+          <p className="text-ink-soft text-base mb-8 max-w-md leading-relaxed">
             Shipping enterprise networking and security infrastructure for Microsoft
             Foundry — helping regulated enterprises adopt AI at scale.
           </p>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-3">
             <a
               href={asset('Meera_Kurup_Resume.pdf')}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-dark transition-colors duration-200"
+              className="inline-flex items-center gap-2 bg-ink text-paper px-6 py-3 font-semibold text-sm hover:bg-accent-dark transition-colors duration-200"
             >
               <FileText size={16} />
               Resume
@@ -50,7 +42,7 @@ export default function Hero() {
               href="https://www.linkedin.com/in/meera-kurup/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-200"
+              className="inline-flex items-center gap-2 border border-ink text-ink px-6 py-3 font-semibold text-sm hover:border-accent hover:text-accent-dark transition-colors duration-200"
             >
               <Linkedin size={16} />
               LinkedIn
@@ -59,16 +51,17 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
+          initial={{ opacity: 0, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex justify-center"
+          className="order-first md:order-none max-w-[220px] md:max-w-none mx-auto md:mx-0 w-full"
         >
           <img
-            src={asset('images/Meera_Hiking.JPG')}
+            src={asset('images/Meera_Headshot.jpg')}
             alt="Meera Kurup"
-            className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-2xl shadow-xl"
+            className="w-full aspect-square object-cover border border-line"
           />
+          <p className="font-mono text-ink-soft text-xs mt-2">Meera Kurup, Bellevue WA</p>
         </motion.div>
       </div>
     </section>

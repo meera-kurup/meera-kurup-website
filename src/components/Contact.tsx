@@ -8,48 +8,36 @@ const socials = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="section-padding bg-primary">
-      <div className="max-w-6xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-14"
-        >
-          <p className="text-primary-light text-sm font-semibold tracking-widest uppercase mb-2">
-            Get in touch
+    <section id="contact" className="section-padding bg-paper">
+      <div className="max-w-5xl mx-auto">
+        <div className="mb-10">
+          <p className="font-mono text-ink-soft text-xs uppercase tracking-wide mb-2">
+            Contact
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white">Say Hi</h2>
-        </motion.div>
+          <h2 className="text-3xl md:text-4xl font-bold text-ink">Get in touch</h2>
+        </div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="max-w-xl mx-auto text-center"
+          className="flex flex-col md:flex-row md:items-end md:justify-between gap-8"
         >
-          <p className="text-white/80 text-lg leading-relaxed mb-8">
+          <p className="text-ink-soft text-lg leading-relaxed max-w-md">
             Product Manager at Microsoft. Always happy to connect — whether it's about
             AI product, enterprise infrastructure, or just to say hello.
           </p>
 
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <Mail size={18} className="text-white/60" />
+          <div className="flex flex-col gap-3 md:items-end">
             <a
               href="mailto:meeraskurup19@gmail.com"
-              className="text-white hover:text-primary-light transition-colors font-medium"
+              className="inline-flex items-center gap-2 text-ink font-medium border-b border-transparent hover:border-accent hover:text-accent-dark transition-colors"
             >
+              <Mail size={16} className="text-ink-soft" />
               meeraskurup19@gmail.com
             </a>
-          </div>
-
-          <div>
-            <p className="text-white/60 text-sm font-medium uppercase tracking-widest mb-4">
-              Connect
-            </p>
-            <div className="flex justify-center gap-4">
+            <div className="flex gap-3">
               {socials.map((s) => (
                 <a
                   key={s.label}
@@ -57,9 +45,9 @@ export default function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="w-10 h-10 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors duration-200"
+                  className="w-9 h-9 border border-line flex items-center justify-center text-ink hover:border-accent hover:text-accent-dark transition-colors duration-200"
                 >
-                  <s.icon size={18} />
+                  <s.icon size={16} />
                 </a>
               ))}
             </div>
@@ -67,8 +55,8 @@ export default function Contact() {
         </motion.div>
       </div>
 
-      <div className="max-w-6xl mx-auto mt-16 pt-8 border-t border-white/20 text-center">
-        <p className="text-white/40 text-sm">© 2026 Meera Kurup. All rights reserved.</p>
+      <div className="max-w-5xl mx-auto mt-16 pt-8 border-t border-line text-center">
+        <p className="font-mono text-ink-soft text-sm">© 2026 Meera Kurup. All rights reserved.</p>
       </div>
     </section>
   )
