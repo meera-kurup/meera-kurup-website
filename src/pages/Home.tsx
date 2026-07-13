@@ -1,7 +1,7 @@
 import Hero from '../components/Hero'
 import About from '../components/About'
-import EarlyVentures from '../components/EarlyVentures'
 import Experience from '../components/Experience'
+import EarlyVentures from '../components/EarlyVentures'
 import Contact from '../components/Contact'
 
 export default function Home() {
@@ -9,8 +9,8 @@ export default function Home() {
     <>
       <Hero />
       <About />
-      <EarlyVentures />
       <Experience />
+      <EarlyVentures />
       <Contact />
     </>
   )

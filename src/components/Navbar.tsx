@@ -5,8 +5,8 @@ const base = import.meta.env.BASE_URL
 const sectionLinks = [
   { label: 'Home', href: base },
   { label: 'About', href: `${base}#about` },
-  { label: 'Early Ventures', href: `${base}#ventures` },
   { label: 'Experience', href: `${base}#experience` },
+  { label: 'Early Ventures', href: `${base}#ventures` },
   { label: 'Contact', href: `${base}#contact` },
 ]
 
