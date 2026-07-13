@@ -33,7 +33,7 @@ const ventures: { tag: string; title: string; description: string; links: Link[]
     tag: '2018 Congressional App Challenge Winner',
     title: 'ALZPoetry',
     description:
-      "A therapeutic app for families of Alzheimer's patients. Family members record themselves reading classic poems, creating a lasting archive of familiar voices their loved ones can return to anytime. Originally built as an iOS app — now being rebuilt as a web app with FastAPI and React.",
+      "A therapeutic app for families of Alzheimer's patients. Family members record themselves reading classic poems, creating a lasting archive of familiar voices their loved ones can return to anytime. Originally built as an iOS app and now being rebuilt as a web app with FastAPI and React.",
     links: [
       { label: 'GitHub', href: 'https://github.com/meera-kurup/ALZPoetry', icon: Github },
       { label: 'Watch Demo', href: 'https://www.youtube.com/watch?v=myzN1LHgtlQ', icon: Youtube },

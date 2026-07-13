@@ -25,7 +25,7 @@ export default function Hero() {
           </p>
           <p className="text-ink-soft text-base mb-8 max-w-md leading-relaxed">
             Shipping enterprise networking and security infrastructure for Microsoft
-            Foundry — helping regulated enterprises adopt AI at scale.
+            Foundry, helping regulated enterprises adopt AI at scale.
           </p>
 
           <div className="flex flex-wrap gap-3">
