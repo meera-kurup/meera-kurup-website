@@ -5,7 +5,7 @@ const bullets = [
   'Own enterprise networking and secure connectivity for Microsoft Foundry and AzureML, shipping features from ideation to GA across IP allowlisting, virtual network integration, private connectivity, and agent tooling.',
   'Drive adoption of secure networking configurations across Foundry and AzureML workspaces, working closely with regulated enterprise customers to unblock deployment at scale.',
   'Improved enterprise supportability by building documentation, templates, and setup flows that meaningfully reduced support ticket volume for networking and permissions issues.',
-  'Built customer and field enablement assets — including Learn docs, infrastructure-as-code templates, architecture diagrams, and conference talks — to accelerate enterprise onboarding and self-service.',
+  'Built customer and field enablement assets (including Learn docs, infrastructure-as-code templates, architecture diagrams, and conference talks) to accelerate enterprise onboarding and self-service.',
 ]
 
 const IGNITE_VIDEO_ID = 'SBI1qgNvWV4'
@@ -31,7 +31,7 @@ export default function Experience() {
         >
           <span className="font-bold text-ink text-sm">Microsoft</span>
           <div>
-            <p className="text-lg font-bold text-ink mb-1">Product Manager II — CoreAI</p>
+            <p className="text-lg font-bold text-ink mb-1">Product Manager II, CoreAI</p>
             <p className="font-mono text-ink-soft text-sm mb-4">
               Microsoft Foundry · Enterprise Networking &amp; Security
             </p>
@@ -51,7 +51,7 @@ export default function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="pt-10"
+          className="pt-10 flex flex-col items-center text-center"
         >
           <p className="font-mono text-ink-soft text-xs uppercase tracking-wide mb-3">
             Speaking
@@ -61,7 +61,7 @@ export default function Experience() {
             the Possible video series. Topics focused around enterprise features and
             network isolation for Microsoft Foundry.
           </p>
-          <div className="aspect-video max-w-xl border border-line mb-4">
+          <div className="aspect-video w-full max-w-xl border border-line mb-4">
             <iframe
               className="w-full h-full"
               src={`https://www.youtube.com/embed/${IGNITE_VIDEO_ID}`}

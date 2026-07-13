@@ -25,7 +25,7 @@ export default function Contact() {
           className="flex flex-col md:flex-row md:items-end md:justify-between gap-8"
         >
           <p className="text-ink-soft text-lg leading-relaxed max-w-md">
-            Product Manager at Microsoft. Always happy to connect — whether it's about
+            Product Manager at Microsoft. Always happy to connect, whether it's about
             AI product, enterprise infrastructure, or just to say hello.
           </p>
 
