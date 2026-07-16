@@ -17,7 +17,7 @@ export default function Experience() {
       <div className="max-w-5xl mx-auto pb-10 md:pb-14 border-b border-line">
         <div className="mb-10">
           <p className="font-mono text-ink-soft text-xs uppercase tracking-wide mb-2">
-            Experience
+            Where I am now
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-ink">Work Experience</h2>
         </div>

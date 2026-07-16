@@ -24,11 +24,11 @@ export default function About() {
           </p>
           <p className="text-ink text-lg leading-relaxed mb-5">
             Before Microsoft, I founded and led a handful of community and ed-tech
-            ventures (experience that shaped how I approach product today: start from the
-            user, ship fast, and measure real impact).
+            ventures, experience that shaped how I approach product today: start from the
+            user, ship fast, and measure real impact.
           </p>
           <p className="text-ink-soft text-base leading-relaxed border-l-2 border-accent pl-4">
-            Brown University CS graduate. Outside of work: dancing, new trails, and the
+            Brown University CS graduate. Outside of work: dance, traveling, and the
             search for the best local restaurant.
           </p>
         </motion.div>
