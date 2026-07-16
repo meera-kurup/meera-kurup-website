@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { CheckCircle2, Youtube } from 'lucide-react'
+import { asset } from '../utils/asset'
 
 const bullets = [
   'Own enterprise networking and secure connectivity for Microsoft Foundry and AzureML, shipping features from ideation to GA across IP allowlisting, virtual network integration, private connectivity, and agent tooling.',
@@ -29,7 +30,14 @@ export default function Experience() {
           transition={{ duration: 0.6 }}
           className="grid md:grid-cols-[140px_1fr] gap-4 md:gap-6 pb-10 border-b border-line"
         >
-          <span className="font-bold text-ink text-sm">Microsoft</span>
+          <div>
+            <img
+              src={asset('images/experience/microsoft.png')}
+              alt="Microsoft logo"
+              className="w-8 h-8 object-contain mb-2"
+            />
+            <span className="font-bold text-ink text-sm">Microsoft</span>
+          </div>
           <div>
             <p className="text-lg font-bold text-ink mb-1">Product Manager II, CoreAI</p>
             <p className="font-mono text-ink-soft text-sm mb-4">
