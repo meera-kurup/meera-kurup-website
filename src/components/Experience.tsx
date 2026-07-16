@@ -34,7 +34,7 @@ export default function Experience() {
             <img
               src={asset('images/experience/microsoft.png')}
               alt="Microsoft logo"
-              className="w-8 h-8 object-contain mb-2"
+              className="w-11 h-11 object-contain mb-2"
             />
             <span className="font-bold text-ink text-sm">Microsoft</span>
           </div>
